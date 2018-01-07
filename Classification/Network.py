@@ -46,7 +46,7 @@ import json
 class Network(object):
     def __init__(self, maxlen=150, units=5, nb_words=2000000,
                  embedding_dims=200, rnn_dim=256, dropout_rate=0.5,
-                 loss='categorical_crossentropy', optimizer='nadam'):
+                 loss='binary_crossentropy', optimizer='nadam'):
         self.nb_words = nb_words
         self.embedding_dims = embedding_dims
         self.maxlen = maxlen
@@ -88,38 +88,38 @@ class Network(object):
         # self.model.load_weights(filepath=model_path)
         return self.model.evaluate(test_feature, test_target, batch_size=batch_size)
 
-    def train(self, train_feature, train_target, dev_feature=np.array([None]), dev_target=np.array([None])):
+    def train(self, bst_model_path, train_feature, train_target, dev_feature=np.array([None]), dev_target=np.array([None])):
         print('Begin to train...')
 
         early_stopping = EarlyStopping(monitor='val_acc', patience=3)
-        now_time = '_'.join(time.asctime(time.localtime(time.time())).split(' '))
-        bst_model_path = curdir + '/save/' + self.model_name + '_' + now_time + '.h5'
+        # now_time = '_'.join(time.asctime(time.localtime(time.time())).split(' '))
+        # bst_model_path = curdir + '/save/' + self.model_name + '_' + now_time + '.h5'
         print('bst_model_path:', bst_model_path)
         model_checkpoint = ModelCheckpoint(bst_model_path, monitor='val_acc', save_best_only=True,
                                            save_weights_only=True)
 
-        tb_cb = TensorBoard(log_dir=parentdir+'/tensorboard/'+self.model_name, histogram_freq=1, write_graph=True, write_images=False,
-                            embeddings_freq=0, embeddings_layer_names=None, embeddings_metadata=None)
+        # tb_cb = TensorBoard(log_dir=parentdir+'/tensorboard/'+self.model_name, histogram_freq=1, write_graph=True, write_images=False,
+        #                     embeddings_freq=0, embeddings_layer_names=None, embeddings_metadata=None)
 
         if os.path.exists(bst_model_path):
             self.model.load_weights(bst_model_path)
 
         if dev_feature.any() == None or dev_target.any()==None:
             self.model.fit(train_feature, train_target,
-                           batch_size=50,
+                           batch_size=200,
                            nb_epoch=15, shuffle=True,
                            validation_split=0.2,
                            # callbacks=[model_checkpoint])
-                           # callbacks=[early_stopping, model_checkpoint])
-                           callbacks=[early_stopping, model_checkpoint, tb_cb])
+                           callbacks=[early_stopping, model_checkpoint])
+                           # callbacks=[early_stopping, model_checkpoint, tb_cb])
         else:
             self.model.fit(train_feature, train_target,
                            batch_size=50,
                            nb_epoch=15, shuffle=True,
                            validation_data=(dev_feature, dev_target),
                            # callbacks=[model_checkpoint])
-                           # callbacks=[early_stopping, model_checkpoint])
-                           callbacks=[early_stopping, model_checkpoint, tb_cb])
+                           callbacks=[early_stopping, model_checkpoint])
+                           # callbacks=[early_stopping, model_checkpoint, tb_cb])
         return bst_model_path
            
 

@@ -1,99 +1,33 @@
 Experiment result.
 <table>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTest </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
+  	 <td align="center", bgcolor=#eeeeee> Dataset </td>
   	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2298 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.6960 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3304 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTest </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
   	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1517 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.8928 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2512 </td>
   </tr>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTest </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2355 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.7167 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3400 </td>
+  	 <td align="center", bgcolor=#eeeeee> ke20k </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.304268621594 </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.246481708098 </td>
   </tr>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTest </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1518 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.9016 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2522 </td>
+  	 <td align="center", bgcolor=#eeeeee> inspec </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.4026 </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.3663 </td>
   </tr>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2341 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.7147 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3382 </td>
+  	 <td align="center", bgcolor=#eeeeee> krapivin </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.2934 </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.2540 </td>
   </tr>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1517 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.9015 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2520 </td>
+  	 <td align="center", bgcolor=#eeeeee> nus </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.3243 </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.2757 </td>
   </tr>
   <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
-  	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2224 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.6745 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3200 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> ResLogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
-  	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1514 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.8934 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2510 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> LogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2332 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.7123 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3371 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> LogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> test </td>
-  	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1509 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.8977 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2508 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> LogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
-  	 <td align="center", bgcolor=#eeeeee> @5 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2153 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.6509 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.3094 </td>
-  </tr>
-  <tr>
-  	 <td align="center", bgcolor=#eeeeee> LogTrain </td>
-  	 <td align="center", bgcolor=#eeeeee> train </td>
-  	 <td align="center", bgcolor=#eeeeee> @10 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.1492 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.8784 </td>
-  	 <td align="center", bgcolor=#eeeeee> 0.2472 </td>
+  	 <td align="center", bgcolor=#eeeeee> semeval </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.124705351443 </td>
+  	 <td align="center", bgcolor=#eeeeee> 0.12697150206 </td>
   </tr>
 </table>
